@@ -48,7 +48,7 @@ export default function AboutSection() {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-portfolio-secondary mb-4">About Me</h2>
           <p className="text-xl text-slate-600 max-w-2xl mx-auto">
-            Dedicated professional with a passion for technology and innovation
+            Engineering Manager | Leading High-Impact Teams to Build Scalable Full-Stack Solutions
           </p>
         </div>
         
@@ -63,20 +63,7 @@ export default function AboutSection() {
               </p>
             )}
             
-            <div className="grid grid-cols-2 gap-6 pt-6">
-              <div className="bg-portfolio-neutral p-6 rounded-lg">
-                <div className="text-3xl font-bold text-portfolio-primary mb-2">
-                  {portfolio.yearsExperience}+
-                </div>
-                <div className="text-slate-600">Years Experience</div>
-              </div>
-              <div className="bg-portfolio-neutral p-6 rounded-lg">
-                <div className="text-3xl font-bold text-portfolio-primary mb-2">
-                  {portfolio.projectsCompleted}+
-                </div>
-                <div className="text-slate-600">Projects Completed</div>
-              </div>
-            </div>
+
           </div>
           
           <div className="bg-gradient-to-br from-portfolio-neutral to-blue-50 p-8 rounded-2xl">

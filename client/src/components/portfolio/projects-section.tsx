@@ -31,7 +31,7 @@ export default function ProjectsSection() {
       <section id="projects" className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h2 className="text-4xl font-bold text-portfolio-secondary mb-4">Featured Projects</h2>
+            <h2 className="text-4xl font-bold text-portfolio-secondary mb-4">Open Source Projects</h2>
             <p className="text-slate-500">No projects available</p>
           </div>
         </div>
@@ -43,9 +43,9 @@ export default function ProjectsSection() {
     <section id="projects" className="py-20 bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-portfolio-secondary mb-4">Featured Projects</h2>
+          <h2 className="text-4xl font-bold text-portfolio-secondary mb-4">Open Source Projects</h2>
           <p className="text-xl text-slate-600 max-w-2xl mx-auto">
-            Showcase of recent work and personal projects
+            Open source contributions demonstrating expertise in blockchain, AI, and serverless technologies
           </p>
         </div>
         

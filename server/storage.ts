@@ -281,35 +281,35 @@ export class MemStorage implements IStorage {
     // Add projects
     const sampleProjects = [
       {
-        title: "AI-Powered Security Service",
-        description: "Critical service using Amazon SageMaker for near real-time security alerting and account suspension utilizing multi-version Machine Learning models. Reduced infrastructure costs by 15% and saved 0.5 hours/day in manual effort.",
-        technologies: ["AWS SageMaker", "Python", "Machine Learning", "Lambda", "S3"],
+        title: "Blockchain Implementation",
+        description: "A simplified yet functional implementation of a basic Blockchain system with mining support and RESTful APIs. Features creation and mining of new blocks, maintenance of full blockchain, and validation of blockchain integrity with proof-of-work algorithm.",
+        technologies: ["Python", "Flask", "Blockchain", "Cryptography", "REST API"],
         liveUrl: null,
-        githubUrl: "https://github.com/sumitkaushik",
+        githubUrl: "https://github.com/Sys-max-one/blockchain",
         imageUrl: null
       },
       {
-        title: "Blockchain Smart Contracts",
-        description: "Designed and implemented Blockchain and Smart Contracts solutions with serverless Generative AI service and Retrieval-Augmented Generative (RAG) LLM based service to promote transparency and collaboration.",
-        technologies: ["Solidity", "Blockchain", "Generative AI", "RAG", "Smart Contracts"],
+        title: "Kcoin ICO Smart Contract",
+        description: "Smart contract implementing a basic Initial Coin Offering (ICO) for Kcoin. Allows investors to buy and sell Kcoin using USD, check equity in both Kcoin and USD. Built with Solidity 0.8.30 and tested on Remix VM.",
+        technologies: ["Solidity", "Smart Contracts", "Ethereum", "Remix IDE", "ICO"],
         liveUrl: null,
-        githubUrl: "https://github.com/sumitkaushik",
+        githubUrl: "https://github.com/Sys-max-one/smart-contract",
         imageUrl: null
       },
       {
-        title: "High-Throughput Backend Service",
-        description: "Led re-architecture of backend service achieving 99.99% SLA and supporting high-throughput of 10k to 19k logs per second. Reduced infrastructure costs by 85% through optimization and scalable design.",
-        technologies: ["Java", "Spring Boot", "AWS", "Kubernetes", "Microservices"],
-        liveUrl: null,
-        githubUrl: "https://github.com/sumitkaushik",
+        title: "Generative AI Sketch Service",
+        description: "Serverless Generative AI service leveraging Amazon Bedrock, AWS Lambda, and Stability-AI to generate images from text prompts. Features secure S3 storage with pre-signed URLs and live API endpoint for immediate image generation in browser.",
+        technologies: ["AWS Bedrock", "Lambda", "S3", "Stability-AI", "Python", "API Gateway"],
+        liveUrl: "https://dsb2zwz7pk.execute-api.us-east-1.amazonaws.com/dev/ai/sketch?prompt=WHAT_YOU_WANT_TO_SKETCH_TODAY",
+        githubUrl: "https://github.com/Sys-max-one/generative-ai",
         imageUrl: null
       },
       {
-        title: "ML-Powered API Platform",
-        description: "RESTful APIs as foundation for ML-powered application enabling AI-driven recommendations. Designed strategic roadmaps and led implementation for scalable enterprise solutions.",
-        technologies: ["Java", "Spring Boot", "ML/AI", "REST APIs", "Python"],
+        title: "RAG-based HR Policy Q&A",
+        description: "Retrieval-Augmented Generation pipeline using FAQ PDF documents and AWS Bedrock for LLM inference. Enables natural language querying over HR policy documents using embeddings, vector database storage, and Claude foundation model for intelligent responses.",
+        technologies: ["Python", "LangChain", "AWS Bedrock", "Claude", "RAG", "Vector Database"],
         liveUrl: null,
-        githubUrl: "https://github.com/sumitkaushik",
+        githubUrl: "https://github.com/Sys-max-one/retrieval_augmented_generation_faq",
         imageUrl: null
       }
     ];
