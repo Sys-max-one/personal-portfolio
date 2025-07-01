@@ -96,31 +96,31 @@ export class MemStorage implements IStorage {
     // Create main portfolio
     const portfolio: Portfolio = {
       id: 1,
-      name: "John Doe",
-      title: "Senior Software Engineer",
-      tagline: "Passionate about creating innovative digital solutions that drive business growth and enhance user experiences.",
-      email: "john.doe@example.com",
-      phone: "+1 (555) 123-4567",
+      name: "Sumit Kaushik",
+      title: "Engineering Manager & AWS Architect",
+      tagline: "Engineering Manager with 4+ years of experience leading software teams, backed by 10+ years of hands-on development expertise in AWS, AI/ML, and Blockchain technologies.",
+      email: "sumitcomp31@gmail.com",
+      phone: "312-961-1061",
       location: "San Francisco, CA",
-      aboutDescription: "With over 5 years of experience in software development, I specialize in creating scalable web applications and leading cross-functional teams. My expertise spans full-stack development, cloud architecture, and agile methodologies.",
-      aboutDescription2: "I'm passionate about continuous learning and staying current with emerging technologies. When I'm not coding, you can find me contributing to open source projects or mentoring junior developers.",
-      yearsExperience: 5,
-      projectsCompleted: 50,
+      aboutDescription: "Engineering Manager with 4+ years of experience leading and managing software development teams, backed by 10+ years of hands-on software development expertise. I have successfully led end-to-end delivery of services using multi-model ML-based AI and enhanced model reliability through iterative training and deployment.",
+      aboutDescription2: "I specialize in recruiting and leading geographically distributed teams, re-architecting systems for high-throughput (10k-19k logs/second), and designing innovative solutions including Blockchain, Smart Contracts, and serverless Generative AI services. My passion lies in mentoring team members and driving business impact through strategic technical leadership.",
+      yearsExperience: 14,
+      projectsCompleted: 75,
       socialLinks: {
-        linkedin: "https://linkedin.com/in/johndoe",
-        github: "https://github.com/johndoe",
-        twitter: "https://twitter.com/johndoe",
-        email: "mailto:john.doe@example.com"
+        linkedin: "https://linkedin.com/in/sumitkaushik",
+        github: "https://github.com/sumitkaushik",
+        email: "mailto:sumitcomp31@gmail.com"
       }
     };
     this.portfolios.set(1, portfolio);
 
     // Add highlights
     const sampleHighlights = [
-      "Led development of enterprise SaaS platform serving 10,000+ users",
-      "Reduced application load time by 40% through optimization",
-      "Implemented CI/CD pipelines reducing deployment time by 60%",
-      "Mentored 8 junior developers and conducted 50+ code reviews"
+      "Managed multi-quarter re-architecture achieving 99.99% SLA and reducing infrastructure costs by 85%",
+      "Led AI-powered critical service using Amazon SageMaker reducing costs by 15% and saving 0.5 hours/day",
+      "Successfully led end-to-end delivery of services with high-throughput of 10k to 19k logs per second",
+      "Designed and implemented Blockchain, Smart Contracts, and serverless Generative AI services",
+      "Led cost-saving initiatives resulting in 18% infrastructure cost reduction and $62K monthly savings"
     ];
     
     sampleHighlights.forEach((text, index) => {
@@ -133,10 +133,12 @@ export class MemStorage implements IStorage {
 
     // Add technical skills
     const technicalSkills = [
-      { name: "JavaScript / TypeScript", level: "Expert", proficiency: 90 },
-      { name: "React / Next.js", level: "Expert", proficiency: 85 },
-      { name: "Node.js / Express", level: "Advanced", proficiency: 80 },
-      { name: "AWS / Cloud Architecture", level: "Advanced", proficiency: 75 }
+      { name: "AWS & Cloud Architecture", level: "Expert", proficiency: 95 },
+      { name: "Java & Spring Boot", level: "Expert", proficiency: 90 },
+      { name: "Python & ML/AI", level: "Advanced", proficiency: 85 },
+      { name: "Blockchain & Solidity", level: "Advanced", proficiency: 80 },
+      { name: "Go & Scala", level: "Advanced", proficiency: 75 },
+      { name: "DevOps & Kubernetes", level: "Expert", proficiency: 88 }
     ];
 
     technicalSkills.forEach((skill, index) => {
@@ -150,15 +152,15 @@ export class MemStorage implements IStorage {
 
     // Add soft skills
     const softSkills = [
-      { name: "Strategic Thinking", level: "Expert", proficiency: 90 },
-      { name: "Communication", level: "Expert", proficiency: 95 },
-      { name: "Team Leadership", level: "Advanced", proficiency: 85 },
-      { name: "Problem Solving", level: "Expert", proficiency: 92 }
+      { name: "Team Leadership", level: "Expert", proficiency: 95 },
+      { name: "Strategic Planning", level: "Expert", proficiency: 92 },
+      { name: "Cross-functional Collaboration", level: "Expert", proficiency: 90 },
+      { name: "Mentoring & Development", level: "Expert", proficiency: 88 }
     ];
 
     softSkills.forEach((skill, index) => {
-      this.skills.set(index + 5, {
-        id: index + 5,
+      this.skills.set(index + 7, {
+        id: index + 7,
         portfolioId: 1,
         category: "soft",
         ...skill
@@ -168,31 +170,49 @@ export class MemStorage implements IStorage {
     // Add experiences
     const sampleExperiences = [
       {
-        title: "Senior Software Engineer",
-        company: "TechCorp Solutions",
-        period: "2021 - Present",
-        description: "Lead development of microservices architecture serving 100k+ daily active users. Implemented automated testing and deployment pipelines.",
-        technologies: ["React", "Node.js", "AWS"],
-        startDate: "2021-01",
-        endDate: null
+        title: "Engineering Manager",
+        company: "Zendesk",
+        period: "June 2021 - April 2025",
+        description: "Managed customer-facing, cross-functional engineering teams to deliver end-to-end, high-throughput scalable backend solutions. Led re-architecture achieving 99.99% SLA and reducing infrastructure costs by 85%. Designed AI-powered service using Amazon SageMaker for real-time security alerting.",
+        technologies: ["AWS", "SageMaker", "Python", "Java", "Kubernetes", "Terraform"],
+        startDate: "2021-06",
+        endDate: "2025-04"
       },
       {
-        title: "Full Stack Developer",
-        company: "Digital Innovations Inc",
-        period: "2019 - 2021",
-        description: "Developed responsive web applications and RESTful APIs. Collaborated with design teams to implement pixel-perfect UIs.",
-        technologies: ["Vue.js", "Python", "PostgreSQL"],
-        startDate: "2019-03",
-        endDate: "2021-01"
+        title: "Technical Lead",
+        company: "StateFarm",
+        period: "November 2018 - June 2021",
+        description: "Designed and developed RESTful APIs as the foundation for ML-powered applications, enabling AI-driven recommendations. Led design discussions and defined strategic roadmaps for future work, optimizing project development within budget.",
+        technologies: ["Java", "Spring Boot", "ML/AI", "REST APIs", "Python"],
+        startDate: "2018-11",
+        endDate: "2021-06"
       },
       {
-        title: "Junior Web Developer",
-        company: "StartupCo",
-        period: "2018 - 2019",
-        description: "Built e-commerce platforms and content management systems. Gained experience in agile development methodologies.",
-        technologies: ["HTML/CSS", "JavaScript", "PHP"],
-        startDate: "2018-06",
-        endDate: "2019-03"
+        title: "Senior Development Engineer",
+        company: "American Express",
+        period: "December 2014 - December 2017",
+        description: "Designed and developed event-driven architecture for customer card updates, enabling seamless campaign execution. Proposed and implemented batch processing improvements for mobile platforms, enhancing efficiency.",
+        technologies: ["Java", "Spring MVC", "Event-driven Architecture", "Batch Processing"],
+        startDate: "2014-12",
+        endDate: "2017-12"
+      },
+      {
+        title: "Development Engineer",
+        company: "Sears Holding Corporation",
+        period: "April 2013 - December 2014",
+        description: "Designed and developed scheduler from scratch that's now been used for many nightly batch processes. Designed and built a component to monitor status of all interacting applications.",
+        technologies: ["Java", "J2EE", "Batch Processing", "System Monitoring"],
+        startDate: "2013-04",
+        endDate: "2014-12"
+      },
+      {
+        title: "Technical Lead",
+        company: "Guardian Life Insurance",
+        period: "February 2012 - March 2013",
+        description: "Understanding of business requirements and relating it to technical detail. Design and developed code for automatically creating work items.",
+        technologies: ["Java", "J2EE", "Workflow Automation"],
+        startDate: "2012-02",
+        endDate: "2013-03"
       }
     ];
 
@@ -207,30 +227,44 @@ export class MemStorage implements IStorage {
     // Add education
     const sampleEducation = [
       {
-        degree: "Bachelor of Computer Science",
-        institution: "University of Technology",
-        period: "2014 - 2018",
-        details: "Magna Cum Laude • GPA: 3.8/4.0\nRelevant Coursework: Data Structures, Algorithms, Software Engineering, Database Systems",
+        degree: "Master of Science in Computer Science",
+        institution: "University",
+        period: "Completed December 2010",
+        details: "Advanced coursework in Computer Science fundamentals, algorithms, and software engineering principles.",
         type: "education"
       },
       {
-        degree: "AWS Solutions Architect",
+        degree: "Certified Blockchain Expert",
+        institution: "Blockchain Certification Authority",
+        period: "April 2025",
+        details: null,
+        type: "certification"
+      },
+      {
+        degree: "AWS Certified Solutions Architect - Associate",
         institution: "Amazon Web Services",
-        period: "2023",
+        period: "March 2021",
         details: null,
         type: "certification"
       },
       {
-        degree: "Certified Kubernetes Administrator",
-        institution: "Linux Foundation",
-        period: "2022",
+        degree: "AWS Certified Developer - Associate",
+        institution: "Amazon Web Services",
+        period: "September 2020",
         details: null,
         type: "certification"
       },
       {
-        degree: "Google Cloud Professional",
-        institution: "Google Cloud",
-        period: "2021",
+        degree: "Sun Certified Business Component Developer (SCBCD)",
+        institution: "Oracle/Sun Microsystems",
+        period: "Completed",
+        details: null,
+        type: "certification"
+      },
+      {
+        degree: "Sun Certified Java Programmer (SCJP)",
+        institution: "Oracle/Sun Microsystems",
+        period: "Completed",
         details: null,
         type: "certification"
       }
@@ -247,27 +281,35 @@ export class MemStorage implements IStorage {
     // Add projects
     const sampleProjects = [
       {
-        title: "E-Commerce Platform",
-        description: "Full-stack e-commerce solution with real-time inventory management, payment processing, and admin dashboard.",
-        technologies: ["React", "Node.js", "MongoDB"],
-        liveUrl: "https://example.com",
-        githubUrl: "https://github.com/johndoe/ecommerce",
+        title: "AI-Powered Security Service",
+        description: "Critical service using Amazon SageMaker for near real-time security alerting and account suspension utilizing multi-version Machine Learning models. Reduced infrastructure costs by 15% and saved 0.5 hours/day in manual effort.",
+        technologies: ["AWS SageMaker", "Python", "Machine Learning", "Lambda", "S3"],
+        liveUrl: null,
+        githubUrl: "https://github.com/sumitkaushik",
         imageUrl: null
       },
       {
-        title: "Task Management App",
-        description: "Collaborative task management application with real-time updates, team collaboration, and project tracking.",
-        technologies: ["Vue.js", "Firebase", "PWA"],
-        liveUrl: "https://example.com",
-        githubUrl: "https://github.com/johndoe/taskapp",
+        title: "Blockchain Smart Contracts",
+        description: "Designed and implemented Blockchain and Smart Contracts solutions with serverless Generative AI service and Retrieval-Augmented Generative (RAG) LLM based service to promote transparency and collaboration.",
+        technologies: ["Solidity", "Blockchain", "Generative AI", "RAG", "Smart Contracts"],
+        liveUrl: null,
+        githubUrl: "https://github.com/sumitkaushik",
         imageUrl: null
       },
       {
-        title: "Analytics Dashboard",
-        description: "Real-time analytics dashboard with interactive charts, data visualization, and automated reporting.",
-        technologies: ["D3.js", "Python", "PostgreSQL"],
-        liveUrl: "https://example.com",
-        githubUrl: "https://github.com/johndoe/analytics",
+        title: "High-Throughput Backend Service",
+        description: "Led re-architecture of backend service achieving 99.99% SLA and supporting high-throughput of 10k to 19k logs per second. Reduced infrastructure costs by 85% through optimization and scalable design.",
+        technologies: ["Java", "Spring Boot", "AWS", "Kubernetes", "Microservices"],
+        liveUrl: null,
+        githubUrl: "https://github.com/sumitkaushik",
+        imageUrl: null
+      },
+      {
+        title: "ML-Powered API Platform",
+        description: "RESTful APIs as foundation for ML-powered application enabling AI-driven recommendations. Designed strategic roadmaps and led implementation for scalable enterprise solutions.",
+        technologies: ["Java", "Spring Boot", "ML/AI", "REST APIs", "Python"],
+        liveUrl: null,
+        githubUrl: "https://github.com/sumitkaushik",
         imageUrl: null
       }
     ];

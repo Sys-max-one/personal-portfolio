@@ -3,10 +3,10 @@ import { useQuery } from "@tanstack/react-query";
 import type { Skill } from "@shared/schema";
 
 const softSkillIcons = {
-  "Strategic Thinking": Target,
-  "Communication": MessageCircle,
   "Team Leadership": UsersIcon,
-  "Problem Solving": Lightbulb,
+  "Strategic Planning": Target,
+  "Cross-functional Collaboration": Users,
+  "Mentoring & Development": Lightbulb,
 };
 
 export default function SkillsSection() {
@@ -43,8 +43,8 @@ export default function SkillsSection() {
   const technicalSkills = skills?.filter(skill => skill.category === "technical") || [];
   const softSkills = skills?.filter(skill => skill.category === "soft") || [];
 
-  // Mock technologies for display
-  const technologies = ["Python", "PostgreSQL", "Docker", "GraphQL", "Redis", "Git"];
+  // Technologies from resume
+  const technologies = ["Flink", "Go", "J2EE", "Python", "Ruby", "Scala", "Solidity", "Spark", "Spring Boot", "Spring MVC", "Kafka", "MongoDB", "MySQL", "Redis", "Kubernetes", "Docker", "Terraform", "Jenkins", "Git"];
 
   return (
     <section id="skills" className="py-20 bg-portfolio-neutral">
@@ -119,10 +119,10 @@ export default function SkillsSection() {
                       <div>
                         <h4 className="font-semibold text-slate-700">{skill.name}</h4>
                         <p className="text-sm text-slate-600">
-                          {skill.name === "Strategic Thinking" && "Planning and executing long-term technical roadmaps"}
-                          {skill.name === "Communication" && "Clear technical communication with stakeholders"}
-                          {skill.name === "Team Leadership" && "Leading and mentoring development teams"}
-                          {skill.name === "Problem Solving" && "Creative solutions to complex technical challenges"}
+                          {skill.name === "Team Leadership" && "Leading and mentoring geographically distributed teams"}
+                          {skill.name === "Strategic Planning" && "Planning and executing multi-quarter technical initiatives"}
+                          {skill.name === "Cross-functional Collaboration" && "Working with diverse teams to drive business impact"}
+                          {skill.name === "Mentoring & Development" && "Supporting professional growth and leadership development"}
                         </p>
                       </div>
                     </div>
