@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(240, 10%, 15%);
+  --muted: hsl(220, 14%, 96%);
+  --muted-foreground: hsl(240, 4%, 46%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(240, 10%, 15%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(240, 10%, 15%);
+  --border: hsl(220, 13%, 91%);
+  --input: hsl(220, 13%, 91%);
+  --primary: hsl(217, 91%, 60%);
+  --primary-foreground: hsl(222, 84%, 4.9%);
+  --secondary: hsl(220, 14%, 96%);
+  --secondary-foreground: hsl(220, 9%, 9%);
+  --accent: hsl(220, 14%, 96%);
+  --accent-foreground: hsl(220, 9%, 9%);
+  --destructive: hsl(0, 84%, 60%);
+  --destructive-foreground: hsl(60, 9%, 98%);
+  --ring: hsl(217, 91%, 60%);
+  --radius: 0.5rem;
+  
+  /* Portfolio specific colors */
+  --portfolio-primary: hsl(217, 91%, 60%);
+  --portfolio-secondary: hsl(215, 25%, 20%);
+  --portfolio-accent: hsl(188, 91%, 60%);
+  --portfolio-neutral: hsl(220, 14%, 97%);
+}
+
+.dark {
+  --background: hsl(240, 10%, 3.9%);
+  --foreground: hsl(0, 0%, 98%);
+  --muted: hsl(240, 3.7%, 15.9%);
+  --muted-foreground: hsl(240, 5%, 64.9%);
+  --popover: hsl(240, 10%, 3.9%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --card: hsl(240, 10%, 3.9%);
+  --card-foreground: hsl(0, 0%, 98%);
+  --border: hsl(240, 3.7%, 15.9%);
+  --input: hsl(240, 3.7%, 15.9%);
+  --primary: hsl(217, 91%, 60%);
+  --primary-foreground: hsl(222, 84%, 4.9%);
+  --secondary: hsl(240, 3.7%, 15.9%);
+  --secondary-foreground: hsl(0, 0%, 98%);
+  --accent: hsl(240, 3.7%, 15.9%);
+  --accent-foreground: hsl(0, 0%, 98%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(240, 4.9%, 83.9%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-inter antialiased;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .font-inter {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  }
+  
+  .text-portfolio-primary {
+    color: hsl(217, 91%, 60%);
+  }
+  
+  .text-portfolio-secondary {
+    color: hsl(215, 25%, 20%);
+  }
+  
+  .text-portfolio-accent {
+    color: hsl(188, 91%, 60%);
+  }
+  
+  .bg-portfolio-primary {
+    background-color: hsl(217, 91%, 60%);
+  }
+  
+  .bg-portfolio-secondary {
+    background-color: hsl(215, 25%, 20%);
+  }
+  
+  .bg-portfolio-accent {
+    background-color: hsl(188, 91%, 60%);
+  }
+  
+  .bg-portfolio-neutral {
+    background-color: hsl(220, 14%, 97%);
+  }
+
+  .gradient-hero {
+    background: linear-gradient(135deg, hsl(220, 14%, 97%) 0%, hsl(0, 0%, 100%) 50%, hsl(214, 100%, 97%) 100%);
+  }
+
+  .gradient-contact {
+    background: linear-gradient(135deg, hsl(215, 25%, 20%) 0%, hsl(215, 19%, 35%) 100%);
+  }
+}
