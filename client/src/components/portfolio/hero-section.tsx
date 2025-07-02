@@ -130,8 +130,12 @@ export default function HeroSection() {
           
           <div className="flex justify-center lg:justify-end">
             <div className="relative">
-              <div className="w-80 h-80 rounded-full bg-gradient-to-br from-portfolio-primary to-portfolio-accent shadow-2xl flex items-center justify-center">
-                <User className="text-white text-8xl opacity-50" />
+              <div className="w-80 h-80 rounded-full bg-gradient-to-br from-portfolio-primary to-portfolio-accent shadow-2xl overflow-hidden">
+                <img 
+                  src="/profile.jpg" 
+                  alt={`${portfolio.name} profile`}
+                  className="w-full h-full object-cover rounded-full"
+                />
               </div>
               <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-portfolio-accent rounded-full flex items-center justify-center shadow-lg">
                 <Code className="text-white text-2xl" />
